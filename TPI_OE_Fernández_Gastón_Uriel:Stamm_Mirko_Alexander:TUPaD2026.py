@@ -313,7 +313,7 @@ def gestionar_turno_literal(accion_solicitada):
         print(f"   Estado: {turno_seleccionado['estado']}")
         return True 
 
-# --- FLUJO PRINCIPAL UNIFICADO (Alineado con Eduardo y BPMN) ---
+# FLUJO PRINCIPAL UNIFICADO 
 def main():
     while True:
         opcion = mostrar_menu()
@@ -345,9 +345,7 @@ def main():
             time.sleep(1)
             continue # Si erró la opción, vuelve a mostrar el menú directo sin preguntar
 
-        # -------------------------------------------------------------
         # COMPUERTA DE CONVERGENCIA ÚNICA 
-        # -------------------------------------------------------------
         # Si la operación fue exitosa (o se completó la consulta de la rama 1),
         # todos los flujos confluyen estrictamente en este punto del código:
         if exito_operacion:
