@@ -1,0 +1,4 @@
+fecha,especie,horario,estado,detalle
+15/06,perro,10:00,CONFIRMADO,Turno para PERRO a las 10:00hs con Dr. Perez (Caninos)
+15/06,gato,11:00,Pendiente,Turno para GATO a las 11:00hs con Dra. Martinez (Felinos)
+18/06,ave,09:30,Pendiente,Turno para AVE a las 09:30hs con Dr. Silva (Aves)
