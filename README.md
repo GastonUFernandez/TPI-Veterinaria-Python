@@ -87,7 +87,7 @@ cd TPI-Veterinaria-Python
 Ejecutar el programa:
 
 ```bash
-python TPI_OE_Fernandez_Gaston_Uriel_Stamm_Mirko_Alexander.py
+python main.py
 ```
 
 ---
