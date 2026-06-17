@@ -53,6 +53,44 @@ ave, Dr. Silva (Aves), 09:30;15:00
 
 ---
 
+## 📖 Manual de Usuario & Guía de Uso
+
+### Ejemplo de Flujo Normal (Reserva de Turno)
+
+```plaintext
+Ingrese la fecha (DD/MM):
+> 15/06
+
+Especies en sistema:
+perro, gato, ave, roedor, reptil
+
+Ingrese el tipo de animal:
+> perro
+
+Turnos disponibles para PERRO el 15/06:
+
+[1] 10:00 hs
+[2] 14:00 hs
+
+Seleccione el número de turno:
+> 1
+
+Éxito: Turno reservado para PERRO a las 10:00 hs.
+```
+
+### Pruebas de Robustez ante Errores
+
+El sistema está diseñado para tolerar fallos del usuario sin romper la ejecución de la consola:
+
+| Caso de Fallo                   | Entrada de Ejemplo                                  | Resultado Esperado                                                            |
+| ------------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------- |
+| Opción de menú inexistente      | 99                                                  | Informa que la opción es inválida y regresa al menú principal.                |
+| Texto donde se espera un entero | hola                                                | Captura la excepción de tipo, informa el error y solicita nueva entrada.      |
+| Fecha con formato inválido      | 40/20 o 15-06                                       | Rechaza la operación, informa el formato esperado (DD/MM) y vuelve a pedirla. |
+| Gestión en fecha vacía          | Seleccionar confirmar/cancelar en un día sin turnos | Advierte que no existen turnos registrados para esa fecha.                    |
+
+---
+
 📦 Ejecución y Requisitos
 
 - Python 3.8 o superior.
