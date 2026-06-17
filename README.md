@@ -75,5 +75,6 @@ python main.py
 - Gastón Uriel Fernández
 - Mirko Alexander Stamm
 
-Universidad Tecnológica Nacional (UTN) Tecnicatura Universitaria en Programación
-Materia: Organización Empresarial | Año Lectivo 2026
+**Universidad Tecnológica Nacional** (UTN) Tecnicatura Universitaria en Programación
+
+Materia: _Organización Empresarial_ | Año Lectivo 2026
